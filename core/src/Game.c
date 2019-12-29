@@ -235,4 +235,8 @@ static struct Sokoban_Game_Tileset Sokoban_Game_Transition(struct Sokoban_Game_T
 			}
 		} break;
 	}
+
+	/* All other inputs are erroneous
+	 */
+	return ERROR;
 }

@@ -1,0 +1,7 @@
+---
+base: fedora:31
+install:
+ - clang
+ - cmake
+ - make
+---

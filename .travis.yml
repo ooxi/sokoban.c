@@ -1,0 +1,15 @@
+# Build target
+script:
+ - mc _ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=clang
+ - mc _ cmake --build build
+
+# Install all required dependencies
+install:
+ - npm install -g mini-cross
+ - mc _ echo 'Install successful'
+
+language: node_js
+
+services:
+ - docker
+
